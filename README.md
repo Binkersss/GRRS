@@ -1,3 +1,6 @@
+## GRRS
+This is a command line program that allows for searching a file, line by line, for all instances of a keyword.
+
 ## Installing Globally 
 With Cargo installed, you may run cargo install chap_grrs
 ## Example Usage
