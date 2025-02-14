@@ -1,4 +1,4 @@
-use crate::find_and_print_matches;
+use grrs::find_and_print_matches;
 
 #[cfg(test)]
 mod tests {
@@ -25,7 +25,7 @@ mod tests {
 
         // Call the function with a pattern
         let mut line = String::new();
-        find_and_print_matches(&mut line, "world", &mut reader, &mut output);
+        grrs::find_and_print_matches(&mut line, "world", &mut reader, &mut output);
 
         // Convert the output to a string for easier comparison
         let output_str = String::from_utf8(output).expect("Invalid UTF-8 in output");
@@ -55,7 +55,7 @@ mod tests {
 
         // Call the function with a pattern that doesn't exist
         let mut line = String::new();
-        find_and_print_matches(&mut line, "python", &mut reader, &mut output);
+        grrs::find_and_print_matches(&mut line, "python", &mut reader, &mut output);
 
         // Convert the output to a string for easier comparison
         let output_str = String::from_utf8(output).expect("Invalid UTF-8 in output");
@@ -81,7 +81,7 @@ mod tests {
 
         // Call the function with a pattern
         let mut line = String::new();
-        find_and_print_matches(&mut line, "world", &mut reader, &mut output);
+        grrs::find_and_print_matches(&mut line, "world", &mut reader, &mut output);
 
         // Convert the output to a string for easier comparison
         let output_str = String::from_utf8(output).expect("Invalid UTF-8 in output");
