@@ -2,7 +2,7 @@ mod testing;
 
 use clap::Parser;
 use anyhow::{Context, Result};
-use grrs::find_and_print_matches;
+use chap_grrs::find_and_print_matches;
 use std::time::Duration;
 
 #[derive(Parser)]

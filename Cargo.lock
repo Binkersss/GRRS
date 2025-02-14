@@ -134,6 +134,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "chap_grrs"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "assert_cmd",
+ "assert_fs",
+ "clap",
+ "indicatif",
+ "predicates",
+ "tempfile",
+]
+
+[[package]]
 name = "clap"
 version = "4.5.29"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -294,19 +307,6 @@ dependencies = [
  "bitflags",
  "ignore",
  "walkdir",
-]
-
-[[package]]
-name = "grrs"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "assert_cmd",
- "assert_fs",
- "clap",
- "indicatif",
- "predicates",
- "tempfile",
 ]
 
 [[package]]
