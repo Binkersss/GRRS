@@ -1,8 +1,6 @@
-use grrs::find_and_print_matches;
-
 #[cfg(test)]
 mod tests {
-    use super::*;
+
     use std::io::{BufReader, Write};
     use std::fs::File;
     use tempfile::NamedTempFile; // Use the `tempfile` crate for temporary files
