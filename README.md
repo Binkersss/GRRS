@@ -12,4 +12,4 @@ With Cargo installed, you may run cargo install chap_grrs
     
     let mut reader = std::io::BufReader::new(file);
     
-    let mut line = String::new();```
+    let mut line = String::new();
